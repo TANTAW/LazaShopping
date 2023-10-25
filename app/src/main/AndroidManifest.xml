@@ -13,16 +13,22 @@
         android:theme="@style/Theme.Laza"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".test_nav.TestActivity2"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_test2"
             android:theme="@style/Theme.Laza">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Laza"/>
     </application>
 
 </manifest>
