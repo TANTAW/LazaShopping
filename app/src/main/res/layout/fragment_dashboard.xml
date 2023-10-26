@@ -12,44 +12,28 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/guideline4">
 
-        <RelativeLayout
+        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_centerVertical="true"
-            android:background="@drawable/oval_gray">
+            android:background="@drawable/oval_gray"
+            android:src="@drawable/burger_menu" />
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerInParent="true"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/burger_menu" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
+        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/oval_gray">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerInParent="true"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/bag"
-                app:tint="@color/black" />
-
-        </RelativeLayout>
+            android:background="@drawable/oval_gray"
+            android:src="@drawable/bag"
+            android:tint="@color/black" />
 
     </RelativeLayout>
 
-    <fragment
-        android:id="@+id/dashboard_nav_graph"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/dashboardNavGraph"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -58,8 +42,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/guideline3"
-        app:navGraph="@navigation/dashboard_nav_graph"
-        tools:ignore="FragmentTagUsage" />
+        app:navGraph="@navigation/dashboard_nav_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
@@ -75,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.03" />
+        app:layout_constraintGuide_percent="0.06" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -83,7 +66,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.97" />
+        app:layout_constraintGuide_percent="0.94" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -91,5 +74,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

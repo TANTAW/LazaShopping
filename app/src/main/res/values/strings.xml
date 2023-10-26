@@ -47,9 +47,15 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
     <string name="todo">TODO</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_test2">TestActivity2</string>
+    <string name="hello">Hello</string>
+    <string name="welcome_to_laza">Welcome to laza</string>
+    <string name="search">Search</string>
+    <string name="choose_brand">Choose Brand</string>
+    <string name="view_all">View All</string>
 </resources>
