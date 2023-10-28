@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hello"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/guideline3" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_to_laza"
         android:textColor="@color/main_grey"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/helloTV" />
 
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/searchRelative" />
 
     <TextView
-        android:id="@+id/viewAllTVId"
+        android:id="@+id/viewAllBrandTVId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -94,6 +94,54 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/searchRelative" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/brandsRV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/chooseBrandTVId"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_list_brands" />
+
+    <TextView
+        android:id="@+id/newArrivalTVId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_arrival"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/brandsRV" />
+
+    <TextView
+        android:id="@+id/viewAllArrivalTVId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/view_all"
+        android:textColor="@color/main_grey"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/brandsRV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/newArrivalTVId"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_list_new_arrival" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

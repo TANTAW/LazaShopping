@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/imageRelative"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="@drawable/round_corner_gray">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/test_img_1" />
+
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/favorite" />
+
+        <ImageView
+            android:id="@+id/markedFavoriteIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/favorite"
+            android:visibility="gone"
+            app:tint="@color/main_red" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageRelative"
+        android:layout_marginTop="8dp"
+        android:fontFamily="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:text="Nike Sportswear Club Fleece" />
+
+    <TextView
+        android:id="@+id/descId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameId"
+        android:layout_marginTop="8dp"
+        android:fontFamily="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:text="Fleece" />
+
+    <TextView
+        android:id="@+id/priceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descId"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:text="99$" />
+
+</RelativeLayout>
