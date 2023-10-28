@@ -131,7 +131,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -139,6 +139,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/newArrivalTVId"
+        app:layout_constraintVertical_bias="0"
         tools:itemCount="4"
         tools:listitem="@layout/item_list_new_arrival" />
 
