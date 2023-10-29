@@ -62,4 +62,10 @@
     <string name="size">Size</string>
     <string name="size_guide">Size Guide</string>
     <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="rating">rating</string>
+    <string name="add_to_chart">Add to Chart</string>
+    <string name="total_price">Total Price</string>
+    <string name="with_vat_sd">with VAT,SD</string>
 </resources>
