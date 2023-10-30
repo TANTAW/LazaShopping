@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dashboard.productDetails.ProductDetailsFragment">
+    tools:context=".productDetails.ProductDetailsFragment">
 
     <ImageView
         android:id="@+id/full_imageId"
@@ -181,11 +181,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/productSizesRV" />
 
-            <TextView
+            <com.example.laza.core.SeeMoreTextView
                 android:id="@+id/descContentTVId"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
+                android:maxLines="2"
                 android:textColor="@color/main_grey"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -236,7 +237,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/total_price"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reviewsRV" />
@@ -247,7 +248,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reviewsRV"

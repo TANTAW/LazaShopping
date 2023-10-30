@@ -1,4 +1,4 @@
-package com.example.laza.dashboard.favorite
+package com.example.laza.payment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import com.example.laza.R
 
 
-class FavoriteFragment : Fragment() {
+class PaymentFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_favorite, container, false)
+        return inflater.inflate(R.layout.fragment_payment, container, false)
     }
 
 }

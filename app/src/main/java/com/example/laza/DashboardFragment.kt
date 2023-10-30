@@ -1,12 +1,11 @@
-package com.example.laza.dashboard
+package com.example.laza
 
 import android.os.Bundle
 import android.view.View
 
 import androidx.navigation.Navigation.findNavController
-import com.example.laza.R
 import com.example.laza.databinding.FragmentDashboardBinding
-import com.example.laza.utils.BaseFragment
+import com.example.laza.core.BaseFragment
 
 class DashboardFragment :
     BaseFragment<FragmentDashboardBinding>(FragmentDashboardBinding::inflate) {

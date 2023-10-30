@@ -1,4 +1,4 @@
-package com.example.laza.utils
+package com.example.laza.core
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.example.laza.dashboard.home
+package com.example.laza.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

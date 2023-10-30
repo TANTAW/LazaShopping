@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp">
+    android:layout_marginBottom="16dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/personImgId"
@@ -71,6 +71,19 @@
         app:layout_constraintEnd_toStartOf="@+id/ratingTV"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="4.8" />
+
+    <RatingBar
+        android:id="@+id/ratingBarId"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:numStars="5"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:layout_constraintEnd_toEndOf="@+id/ratingTV"
+        app:layout_constraintStart_toStartOf="@+id/ratingValueTVID"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTV" />
 
     <TextView
         android:id="@+id/reviewContentTVID"

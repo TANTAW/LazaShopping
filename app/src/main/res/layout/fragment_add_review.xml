@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reviews.AddReviewFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/oval_gray"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_review"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backIcon"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/nameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/backIcon" />
+
+    <EditText
+        android:id="@+id/nameED"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:background="@drawable/round_corner_gray"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/main_grey"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/nameId" />
+
+    <TextView
+        android:id="@+id/descId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/how_was_your_experience"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/nameED" />
+
+    <EditText
+        android:id="@+id/descEd"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:background="@drawable/round_corner_gray"
+        android:gravity="start|top"
+        android:hint="@string/describe_your_experience"
+        android:inputType="text"
+        android:maxLines="6"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/main_grey"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/descId" />
+
+    <TextView
+        android:id="@+id/starId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/star"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/descEd" />
+
+    <TextView
+        android:id="@+id/zeroId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/_0_0"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/starId" />
+
+    <TextView
+        android:id="@+id/fiveId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/_5_0"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/starId" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:stepSize="0.5"
+        android:valueFrom="0.0"
+        android:valueTo="5.0"
+        app:haloColor="@color/main_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/zeroId"
+        app:layout_constraintEnd_toStartOf="@+id/fiveId"
+        app:layout_constraintStart_toEndOf="@+id/zeroId"
+        app:layout_constraintTop_toTopOf="@+id/zeroId"
+        app:thumbColor="@color/main_blue"
+        app:thumbRadius="10dp"
+        app:thumbStrokeColor="@color/main_blue" />
+
+    <TextView
+        android:id="@+id/submitReviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_blue"
+        android:gravity="center|top"
+        android:paddingTop="18dp"
+        android:text="@string/submit_review"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

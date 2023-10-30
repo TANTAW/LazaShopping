@@ -68,4 +68,13 @@
     <string name="add_to_chart">Add to Chart</string>
     <string name="total_price">Total Price</string>
     <string name="with_vat_sd">with VAT,SD</string>
+    <string name="add_review">Add Review</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Type your name</string>
+    <string name="how_was_your_experience">How was your experience ?</string>
+    <string name="describe_your_experience">Describe your experience?</string>
+    <string name="star">Star</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="_5_0">5.0</string>
+    <string name="_0_0">0.0</string>
 </resources>
