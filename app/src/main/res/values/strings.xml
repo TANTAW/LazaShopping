@@ -77,4 +77,11 @@
     <string name="submit_review">Submit Review</string>
     <string name="_5_0">5.0</string>
     <string name="_0_0">0.0</string>
+    <string name="visa_classic">Visa Classic</string>
+    <string name="stars_digits">****</string>
+    <string name="add_new_card">Add new card</string>
+    <string name="card_owner">Card Owner</string>
+    <string name="card_number">Card Number</string>
+    <string name="type_card_owner">Type card owner</string>
+    <string name="type_card_number">Type card number</string>
 </resources>
