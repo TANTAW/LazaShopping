@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Laza</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="wishlist">WishList</string>
+    <string name="payment">Payment</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -43,7 +47,34 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="todo">TODO</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_test2">TestActivity2</string>
+    <string name="hello">Hello</string>
+    <string name="welcome_to_laza">Welcome to laza</string>
+    <string name="search">Search</string>
+    <string name="choose_brand">Choose Brand</string>
+    <string name="view_all">View All</string>
+    <string name="new_arrival">New Arrival</string>
+    <string name="size">Size</string>
+    <string name="size_guide">Size Guide</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="rating">rating</string>
+    <string name="add_to_chart">Add to Chart</string>
+    <string name="total_price">Total Price</string>
+    <string name="with_vat_sd">with VAT,SD</string>
+    <string name="add_review">Add Review</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Type your name</string>
+    <string name="how_was_your_experience">How was your experience ?</string>
+    <string name="describe_your_experience">Describe your experience?</string>
+    <string name="star">Star</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="_5_0">5.0</string>
+    <string name="_0_0">0.0</string>
 </resources>
