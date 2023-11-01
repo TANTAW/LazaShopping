@@ -91,4 +91,9 @@
     <string name="save_card_info">Save card info</string>
     <string name="save_card">Save Card</string>
     <string name="add_card">Add Card</string>
+    <string name="items">Items</string>
+    <string name="in_wishlist">In wishlist</string>
+    <string name="edit">Edit</string>
+    <string name="available_in_stock">Available in stock</string>
+    <string name="sort">Sort</string>
 </resources>

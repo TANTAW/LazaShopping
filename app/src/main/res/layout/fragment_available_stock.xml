@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".whishlist.WishListFragment">
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/backIcon"
@@ -15,9 +14,12 @@
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/brandIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/nike"
         android:text="@string/wishlist"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -66,23 +68,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="@string/in_wishlist"
+        android:text="@string/available_in_stock"
         android:textColor="@color/main_grey"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/itemsCountValueTV" />
 
     <TextView
-        android:id="@+id/editBtn"
+        android:id="@+id/sortBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_corner_gray"
         android:drawablePadding="8dp"
         android:padding="16dp"
-        android:text="@string/edit"
+        android:text="@string/sort"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:drawableLeftCompat="@drawable/edit"
+        app:drawableLeftCompat="@drawable/sort"
         app:drawableTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/inWishTV"
         app:layout_constraintEnd_toStartOf="@id/guideline3"

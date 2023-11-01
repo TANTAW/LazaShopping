@@ -71,6 +71,7 @@
         android:fontFamily="?android:textAppearanceMedium"
         android:textColor="@color/black"
         android:textSize="12sp"
+        android:textStyle="bold"
         tools:text="99$" />
 
 </RelativeLayout>
