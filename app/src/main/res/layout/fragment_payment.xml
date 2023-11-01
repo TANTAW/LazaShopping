@@ -31,7 +31,7 @@
         android:id="@+id/cardsRV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -66,61 +66,41 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/add_new_card"
-            android:textColor="@color/main_blue" />
+            android:textColor="@color/main_blue"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/cardOwnerTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/card_owner"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/addNewCardBtn" />
-
-    <EditText
-        android:id="@+id/cardOwnerEd"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autofillHints="name"
-        android:background="@drawable/round_corner_gray"
-        android:hint="@string/type_card_owner"
-        android:inputType="text"
-        android:padding="12dp"
-        android:textColorHint="@color/main_grey"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveCardBtn"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/cardOwnerTV" />
+        app:layout_constraintTop_toBottomOf="@id/addNewCardBtn"
+        app:layout_constraintVertical_bias="0">
+
+        <include
+            layout="@layout/payment_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
 
     <TextView
-        android:id="@+id/cardNumberTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/card_number"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/cardOwnerEd" />
-
-    <EditText
-        android:id="@+id/cardNumberEd"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autofillHints="name"
-        android:background="@drawable/round_corner_gray"
-        android:hint="@string/type_card_number"
-        android:inputType="number"
-        android:padding="12dp"
-        android:textColorHint="@color/main_grey"
-        app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumberTV" />
+        android:id="@+id/saveCardBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_blue"
+        android:gravity="center|top"
+        android:paddingTop="18dp"
+        android:text="@string/save_card"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
