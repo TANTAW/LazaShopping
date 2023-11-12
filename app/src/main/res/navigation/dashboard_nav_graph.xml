@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dashboard_navgraph.xml"
-    app:startDestination="@id/dashboard_navgraph.xml">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -29,4 +29,25 @@
         android:label="fragment_payment"
         tools:layout="@layout/fragment_payment" />
 
+    <fragment
+        android:id="@+id/IdentityTypeFragment"
+        android:name="com.example.laza.identityType.IdentityTypeFragment"
+        android:label="@string/identity_type_fragment"
+        tools:layout="@layout/fragment_identity_type">
+
+        <action
+            android:id="@+id/action_IdentityTypeFragment_to_AccountCreationChooserFragment"
+            app:destination="@id/AccountCreationChooserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AccountCreationChooserFragment"
+        android:name="com.example.laza.accountCreationChooser.AccountCreationChooserFragment"
+        android:label="@string/account_creation_chooser"
+        tools:layout="@layout/fragment_account_creation_chooser">
+
+        <action
+            android:id="@+id/action_AccountCreationChooserFragment_to_IdentityTypeFragment"
+            app:destination="@id/IdentityTypeFragment" />
+    </fragment>
 </navigation>

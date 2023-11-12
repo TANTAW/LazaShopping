@@ -12,9 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Laza"
         tools:targetApi="31">
-
         <activity
-            android:name=".test_nav.TestActivity2"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Laza">
 
@@ -23,12 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-        </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Laza" />
+        </activity>
 
     </application>
 
