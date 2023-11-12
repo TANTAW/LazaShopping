@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountCreationChooserFragment">
+    tools:context=".accountCreationChooser.AccountCreationChooserFragment">
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/button_second"
+        android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -25,7 +25,7 @@
         android:text="Let’s Get Started"
         android:textColor="@color/black"
         android:textSize="28sp"
-        app:layout_constraintTop_toBottomOf="@id/button_second" />
+        app:layout_constraintTop_toBottomOf="@id/button_back" />
 
     <LinearLayout
         android:id="@+id/facebook_btn"
@@ -132,7 +132,7 @@
 
 
     <TextView
-        android:id="@+id/create_account_BTN"
+        android:id="@+id/confirm_order_BTN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/main_blue"
@@ -153,7 +153,7 @@
         android:text="Already have an account? "
         android:textColor="@color/main_grey"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/create_account_BTN"
+        app:layout_constraintBottom_toTopOf="@id/confirm_order_BTN"
         app:layout_constraintStart_toStartOf="@id/vr_guide_15" />
 
     <TextView
@@ -164,7 +164,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_already_have_account"
-        app:layout_constraintBottom_toTopOf="@id/create_account_BTN"
+        app:layout_constraintBottom_toTopOf="@id/confirm_order_BTN"
         app:layout_constraintStart_toEndOf="@id/tv_already_have_account" />
 
     <androidx.constraintlayout.widget.Guideline

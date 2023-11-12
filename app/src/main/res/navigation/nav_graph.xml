@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/IdentityTypeFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.laza.IdentityTypeFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/IdentityTypeFragment"
+        android:name="com.example.laza.identityType.IdentityTypeFragment"
+        android:label="@string/identity_type_fragment"
+        tools:layout="@layout/fragment_identity_type">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_IdentityTypeFragment_to_AccountCreationChooserFragment"
+            app:destination="@id/AccountCreationChooserFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.laza.AccountCreationChooserFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/AccountCreationChooserFragment"
+        android:name="com.example.laza.accountCreationChooser.AccountCreationChooserFragment"
+        android:label="@string/account_creation_chooser"
+        tools:layout="@layout/fragment_account_creation_chooser">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_AccountCreationChooserFragment_to_IdentityTypeFragment"
+            app:destination="@id/IdentityTypeFragment" />
     </fragment>
 </navigation>

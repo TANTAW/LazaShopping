@@ -1,12 +1,49 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.laza.MainActivity">
+    tools:context="com.example.laza.MainActivity"
+    tools:showIn="navigation_view">
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    <group>
+        <item
+            android:id="@+id/action_dark_mode"
+            android:checkable="true"
+            android:icon="@drawable/ic_sun"
+            android:title="@string/dark_mode"
+            app:actionViewClass="android.widget.Switch" />
+
+        <item
+            android:id="@+id/action_account_info"
+            android:icon="@drawable/ic_info_circle"
+            android:title="@string/account_info" />
+
+
+        <item
+            android:id="@+id/action_password"
+            android:icon="@drawable/ic_lock"
+            android:title="@string/password" />
+
+
+        <item
+            android:id="@+id/action_order"
+            android:icon="@drawable/bag"
+            android:title="@string/order" />
+
+        <item
+            android:id="@+id/action_cards"
+            android:icon="@drawable/wallet"
+            android:title="@string/cards" />
+
+        <item
+            android:id="@+id/action_favorite"
+            android:icon="@drawable/favorite"
+            android:title="@string/favorite" />
+
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/action_settings" />
+
+    </group>
 
 </menu>

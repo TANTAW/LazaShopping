@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tantawy"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/vr_guideline_25"
+        app:layout_constraintTop_toBottomOf="@id/hr_guideline_30"
+        />
+
+    <TextView
+        android:id="@+id/tv_verified_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verified Profile"
+        android:textSize="16sp"
+        android:textColor="@color/main_grey"
+        app:layout_constraintStart_toStartOf="@id/vr_guideline_25"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_star_bag"
+        app:layout_constraintBottom_toTopOf="@id/hr_guideline_75"
+        app:layout_constraintStart_toEndOf="@id/tv_verified_profile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintVertical_bias="0.22000003" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hr_guideline_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="@color/_8f959e"
+        android:text="3 Orders"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/orders_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vr_guideline_75"
+        app:layout_constraintTop_toTopOf="@id/hr_guideline_30"
+        app:layout_constraintBottom_toBottomOf="@id/hr_guideline_75"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hr_guideline_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vr_guideline_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vr_guideline_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

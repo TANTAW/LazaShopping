@@ -96,4 +96,12 @@
     <string name="edit">Edit</string>
     <string name="available_in_stock">Available in stock</string>
     <string name="sort">Sort</string>
+    <string name="identity_type_fragment">Identity Type</string>
+    <string name="account_creation_chooser">Create Account</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="account_info">Account Information</string>
+    <string name="password">Password</string>
+    <string name="order">Order</string>
+    <string name="cards">My Cards</string>
+    <string name="logout">Logout</string>
 </resources>
