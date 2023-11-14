@@ -53,7 +53,7 @@
             android:id="@+id/iv_down_arrow"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="null"
+            android:background="@android:color/transparent"
             android:src="@drawable/arrow_down"
             app:layout_constraintStart_toEndOf="@id/iv_item_img"
             app:layout_constraintTop_toBottomOf="@id/tv_item_price" />
@@ -74,7 +74,7 @@
             android:id="@+id/ic_up_arrow"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="null"
+            android:background="@android:color/transparent"
             android:src="@drawable/arrow_up"
             app:layout_constraintStart_toEndOf="@id/tv_counter"
             app:layout_constraintTop_toBottomOf="@id/tv_item_price" />
@@ -84,7 +84,7 @@
             android:id="@+id/ic_delete"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="null"
+            android:background="@android:color/transparent"
             android:layout_margin="16dp"
             android:src="@drawable/ic_delete"
             app:layout_constraintEnd_toEndOf="parent"

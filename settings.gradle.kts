@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Laza"
 include(":app")
- 
+include(":domin")
+include(":data")
