@@ -1,4 +1,4 @@
-package com.ahmed.a.habib.data.login
+package com.example.data.login
 
 data class LoginRequest(
     val userName: String,

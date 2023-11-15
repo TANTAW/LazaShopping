@@ -7,7 +7,7 @@ import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.widget.TextView
-import com.ahmed.a.habib.common.BaseFragment
+import com.example.common.BaseFragment
 import com.example.laza.R
 import com.example.laza.databinding.FragmentLoginBinding
 

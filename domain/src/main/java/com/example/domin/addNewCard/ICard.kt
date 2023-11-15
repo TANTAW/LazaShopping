@@ -1,6 +1,6 @@
 package com.example.domin.addNewCard
 
-import com.ahmed.a.habib.common.DataResult
+import com.example.common.DataResult
 import kotlinx.coroutines.flow.Flow
 
 interface ICard {

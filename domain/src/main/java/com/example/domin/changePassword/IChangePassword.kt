@@ -1,6 +1,6 @@
 package com.example.domin.changePassword
 
-import com.ahmed.a.habib.common.DataResult
+import com.example.common.DataResult
 import kotlinx.coroutines.flow.Flow
 
 interface IChangePassword {

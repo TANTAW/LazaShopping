@@ -1,6 +1,6 @@
 package com.example.domin.addReview
 
-import com.ahmed.a.habib.common.DataResult
+import com.example.common.DataResult
 import com.example.domin.home.ReviewDto
 import kotlinx.coroutines.flow.Flow
 

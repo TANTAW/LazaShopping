@@ -1,4 +1,4 @@
-package com.ahmed.a.habib.data.login
+package com.example.data.login
 
 import retrofit2.Response
 import retrofit2.http.GET

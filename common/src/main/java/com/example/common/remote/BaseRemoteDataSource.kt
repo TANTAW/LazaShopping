@@ -1,6 +1,6 @@
-package com.ahmed.a.habib.common.remote
+package com.example.common.remote
 
-import com.ahmed.a.habib.common.DataResult
+import com.example.common.DataResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import org.json.JSONObject

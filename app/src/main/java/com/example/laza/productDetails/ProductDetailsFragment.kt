@@ -3,7 +3,7 @@ package com.example.laza.productDetails
 import android.os.Bundle
 import android.view.View
 import com.example.laza.databinding.FragmentProductDetailsBinding
-import com.ahmed.a.habib.common.BaseFragment
+import com.example.common.BaseFragment
 
 
 class ProductDetailsFragment :

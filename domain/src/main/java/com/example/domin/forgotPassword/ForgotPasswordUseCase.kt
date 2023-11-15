@@ -1,9 +1,9 @@
 package com.example.domin.forgotPassword
 
-import com.ahmed.a.habib.common.Resource
+import com.example.common.DataResult
 import kotlinx.coroutines.flow.Flow
 
 class ForgotPasswordUseCase(private val forgotPasswordRepository: IForgotPassword) {
-    operator fun invoke(email: String): Flow<Resource<ForgotPasswordDto>> =
+    operator fun invoke(email: String): Flow<DataResult<ForgotPasswordDto>> =
         forgotPasswordRepository.forgotPassword(email)
 }

@@ -1,6 +1,6 @@
-package com.ahmed.a.habib.common
+package com.example.common
 
-import com.ahmed.a.habib.common.remote.ErrorTypes
+import com.example.common.remote.ErrorTypes
 
 sealed class DataResult<out T : Any> {
     data class Loading<out T : Any>(val data: T?) : DataResult<T>()

@@ -1,4 +1,4 @@
-package com.ahmed.a.habib.common.remote
+package com.example.common.remote
 
 
 sealed class ErrorTypes(open val errorMessage: String?) {

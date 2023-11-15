@@ -1,6 +1,6 @@
-package com.ahmed.a.habib.data.login
+package com.example.data.login
 
-import com.ahmed.a.habib.common.DataResult
+import com.example.common.DataResult
 import com.example.domin.login.ILoginUser
 import kotlinx.coroutines.flow.flowOf
 
