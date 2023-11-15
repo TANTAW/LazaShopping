@@ -2,9 +2,8 @@ package com.example.laza.payment
 
 import android.os.Bundle
 import android.view.View
-import com.example.laza.core.BaseFragment
+import com.ahmed.a.habib.common.BaseFragment
 import com.example.laza.databinding.FragmentPaymentBinding
-
 
 class PaymentFragment : BaseFragment<FragmentPaymentBinding>(FragmentPaymentBinding::inflate) {
 
