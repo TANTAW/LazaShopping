@@ -3,7 +3,7 @@ package com.example.domin.addNewCard
 import com.example.domin.common.Resource
 import kotlinx.coroutines.flow.Flow
 
-class AddNewCardUseCase(private val addCard: ICard) {
+class AddNewCardUseCase(private val addCardRepository: ICard) {
     operator fun invoke(
         type: CardType,
         cardHolder: String,
@@ -12,5 +12,5 @@ class AddNewCardUseCase(private val addCard: ICard) {
         cvv: Int,
         isConfirmed: Boolean
     ): Flow<Resource<CardDto>> =
-        addCard.addCard(type, cardHolder, cardNumber, expiryDate, cvv, isConfirmed)
+        addCardRepository.addCard(type, cardHolder, cardNumber, expiryDate, cvv, isConfirmed)
 }
