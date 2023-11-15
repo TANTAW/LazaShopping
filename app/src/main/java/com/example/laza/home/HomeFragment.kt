@@ -1,8 +1,9 @@
 package com.example.laza.home
 
+
 import android.os.Bundle
 import android.view.View
-import com.example.laza.core.BaseFragment
+import com.ahmed.a.habib.common.BaseFragment
 import com.example.laza.databinding.FragmentHomeBinding
 
 
