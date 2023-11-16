@@ -12,6 +12,7 @@ import com.example.laza.R
 import com.example.laza.databinding.FragmentLoginBinding
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::inflate) {
+
     private lateinit var textview: TextView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

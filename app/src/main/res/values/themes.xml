@@ -6,4 +6,8 @@
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
     </style>
 
+
+    <style name="Widget.App.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="trackThickness">20dp</item>
+    </style>
 </resources>
