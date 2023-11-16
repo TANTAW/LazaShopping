@@ -5,6 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 class LoginUserUseCase(private val loginUser: ILoginUser) {
 
-    operator fun invoke(userName: String, password: String): Flow<DataResult<LoginUserDto>> =
-        loginUser.login(userName, password)
+    operator fun invoke(userName: String, password: String): Flow<DataResult<LoginUserDto>> {
+        return loginUser.login(userName, password)
+    }
 }

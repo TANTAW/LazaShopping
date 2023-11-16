@@ -10,10 +10,9 @@ open class BaseRemoteDataSource {
 
     fun <T : Any> safeApiCall(
         call: suspend () -> Response<T>
-    ): Flow<DataResult<T>> =
-        flow {
-            emit(safeApiResult(call))
-        }
+    ): Flow<DataResult<T>> = flow {
+        emit(safeApiResult(call))
+    }
 
     private suspend fun <T : Any> safeApiResult(call: suspend () -> Response<T>): DataResult<T> {
         var response: Response<T>? = null
