@@ -6,18 +6,38 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.view.View
-import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
 import com.example.common.BaseFragment
-import com.example.laza.R
 import com.example.laza.databinding.FragmentLoginBinding
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::inflate) {
 
-    private lateinit var textview: TextView
+    private lateinit var viewModel: LoginViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showText()
+        onClickListener()
+        setUpViewModel()
+        observer()
+    }
+
+    private fun observer() {
+        viewModel.success.observe(viewLifecycleOwner){
+//            navigateTo()
+        }
+    }
+
+    private fun setUpViewModel() {
+        viewModel = ViewModelProvider(requireActivity())[LoginViewModel::class.java]
+    }
+
+    private fun onClickListener() {
+        binding.loginBTN.setOnClickListener {
+            val username = binding.etUserName.editText?.text.toString()
+            val password = binding.etPassword.editText?.text.toString()
+            viewModel.login(username, password)
+        }
     }
 
     private fun showText() {
@@ -33,7 +53,8 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::i
             Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
-        textview = requireView().findViewById(R.id.tv_terms_and_condition)
-        textview.text = text
+        binding.tvTermsAndCondition.text = text
     }
+
+
 }

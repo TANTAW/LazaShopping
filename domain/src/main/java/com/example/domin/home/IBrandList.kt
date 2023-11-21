@@ -1,8 +1,8 @@
 package com.example.domin.home
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface IBrandList {
-    fun getBrandList(): Flow<DataResult<List<BrandDto>>>
+    fun getBrandList(): Flow<Resource<List<BrandDto>>>
 }

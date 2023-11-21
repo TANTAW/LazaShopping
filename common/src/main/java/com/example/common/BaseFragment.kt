@@ -86,4 +86,9 @@ abstract class BaseFragment<BB : ViewBinding>(
         super.onDestroy()
         _binding = null
     }
+
+    fun navigateTo(navigationAction: Int){
+
+    }
+
 }

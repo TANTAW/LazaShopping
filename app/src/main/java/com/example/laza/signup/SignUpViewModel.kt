@@ -1,18 +1,17 @@
-package com.example.laza.login
+package com.example.laza.signup
 
 import com.example.common.BaseViewModel
 import com.example.common.Resource
 import com.example.common.SingleMutableLiveData
-import com.example.domin.login.LoginUserUseCase
+import com.example.domin.signUp.SignUpUseCase
 import kotlinx.coroutines.flow.map
 
-class LoginViewModel(private val login: LoginUserUseCase) : BaseViewModel() {
-
+class SignUpViewModel(private val signUpUseCase: SignUpUseCase): BaseViewModel() {
     private val _success: SingleMutableLiveData<Boolean> = SingleMutableLiveData()
-    val success get() = _success
+    val states get() = _success
 
-    fun login(username: String, password: String) {
-        login.invoke(username, password)
+    fun signup(username: String, password: String, email: String) {
+        signUpUseCase.invoke(username, password, email)
             .map {
                 when (it) {
                     is Resource.Error -> {

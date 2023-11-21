@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_username">Name can\'t be blank!</string>
+    <string name="more_than_8">Password need to be more than 8 characters!</string>
+    <string name="password_validation">Password must contain at least 1 digit, 1 letter and 1 uppercase letter.</string>
+    <string name="empty_email">Email can\'t be blank!</string>
+    <string name="enter_valid_email">"Enter valid email!"</string>
+    <string name="empty_password">Password can\'t be blank!</string>
+    <string name="empty_confirm_password">Confirm password can\'t be blank!</string>
+    <string name="not_the_same_password">Passwords aren\'t the same!</string>
+    <string name="greater_than_zero">Rating must be greater than zero!</string>
+    <string name="empty_description">Description can\'t be blank!</string>
+    <string name="empty_address">Address can\'t be blank</string>
+    <string name="empty_phone_number">Phone nummber can\'t be blank</string>
+    <string name="empty_city">City can\'t be blank!</string>
+    <string name="empty_country">Country can\'t be blank!</string>
+    <string name="valid_phone">Enter valid phone number!</string>
+</resources>

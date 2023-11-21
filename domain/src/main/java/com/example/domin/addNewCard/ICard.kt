@@ -1,6 +1,6 @@
 package com.example.domin.addNewCard
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface ICard {
@@ -9,7 +9,6 @@ interface ICard {
         cardHolder: String,
         cardNumber: Int,
         expiryDate: String,
-        cvv: Int,
-        isConfirmed: Boolean
-    ): Flow<DataResult<CardDto>>
+        cvv: Int
+    ): Flow<Resource<CardDto>>
 }

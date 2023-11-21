@@ -6,5 +6,5 @@ data class CardDto(
     val cardNumber: Int,
     val expiryDate: String,
     val cvv: Int,
-    val isConfirmed: Boolean
+    val isConfirmed: Boolean = false
 )

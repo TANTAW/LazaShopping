@@ -1,6 +1,6 @@
 package com.example.domin.signUp
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface ISignUpUser {
@@ -8,5 +8,5 @@ interface ISignUpUser {
         userName: String,
         password: String,
         email: String,
-    ): Flow<DataResult<SignUpUserDto>>
+    ): Flow<Resource<SignUpUserDto>>
 }
