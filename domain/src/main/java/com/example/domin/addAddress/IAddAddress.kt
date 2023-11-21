@@ -1,6 +1,6 @@
 package com.example.domin.addAddress
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface IAddAddress {
@@ -11,5 +11,5 @@ interface IAddAddress {
         phoneNumber: String,
         address: String,
         isConfirmed: Boolean
-    ): Flow<DataResult<AddressDto>>
+    ): Flow<Resource<AddressDto>>
 }

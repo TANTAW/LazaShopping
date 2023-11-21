@@ -1,4 +1,4 @@
-package com.example.data.login
+package com.example.data.login.models
 
 import com.example.domin.login.LoginUserDto
 

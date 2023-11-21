@@ -1,11 +1,10 @@
 package com.example.laza.login
 
 import com.example.common.BaseViewModel
-import com.example.common.DataResult
+import com.example.common.Resource
 import com.example.common.SingleMutableLiveData
 import com.example.domin.login.LoginUserUseCase
 import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.onStart
 
 class LoginViewModel(private val login: LoginUserUseCase) : BaseViewModel() {
 
@@ -16,12 +15,12 @@ class LoginViewModel(private val login: LoginUserUseCase) : BaseViewModel() {
         login.invoke(username, password)
             .map {
                 when (it) {
-                    is DataResult.Error -> {
+                    is Resource.Error -> {
                         handleError(it.errorTypes)
                     }
 
-                    is DataResult.Loading -> handleLoading(true)
-                    is DataResult.Success -> {
+                    is Resource.Loading -> handleLoading(true)
+                    is Resource.Success -> {
                         handleLoading(false)
                         _success.value = true
                     }

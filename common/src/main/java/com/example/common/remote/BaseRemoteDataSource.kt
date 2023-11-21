@@ -1,6 +1,6 @@
 package com.example.common.remote
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import org.json.JSONObject
@@ -10,11 +10,11 @@ open class BaseRemoteDataSource {
 
     fun <T : Any> safeApiCall(
         call: suspend () -> Response<T>
-    ): Flow<DataResult<T>> = flow {
+    ): Flow<Resource<T>> = flow {
         emit(safeApiResult(call))
     }
 
-    private suspend fun <T : Any> safeApiResult(call: suspend () -> Response<T>): DataResult<T> {
+    private suspend fun <T : Any> safeApiResult(call: suspend () -> Response<T>): Resource<T> {
         var response: Response<T>? = null
 
         try {
@@ -25,17 +25,17 @@ open class BaseRemoteDataSource {
         }
 
         if (response.isSuccessful) {
-            return DataResult.Success(response.body())
+            return Resource.Success(response.body())
         }
 
         return getResultError(response)
     }
 
-    private fun <T> getResultError(response: Response<T>?): DataResult.Error {
+    private fun <T> getResultError(response: Response<T>?): Resource.Error {
         return when (response?.code()) {
 
             401 -> {
-                DataResult.Error(ErrorTypes.AuthenticationError())
+                Resource.Error(ErrorTypes.AuthenticationError())
             }
 
             in 402..499 -> {
@@ -46,7 +46,7 @@ open class BaseRemoteDataSource {
                     "Error happened, try again."
                 }
 
-                DataResult.Error(
+                Resource.Error(
                     ErrorTypes.NetworkError(
                         message
                     )
@@ -54,13 +54,13 @@ open class BaseRemoteDataSource {
             }
 
             500 -> {
-                DataResult.Error(
+                Resource.Error(
                     ErrorTypes.NetworkError("Opps, unknown error happened, please try again later")
                 )
             }
 
             else -> {
-                DataResult.Error(
+                Resource.Error(
                     ErrorTypes.GeneralError(
                         response?.errorBody()?.string().orEmpty()
                     )

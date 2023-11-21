@@ -1,6 +1,6 @@
 package com.example.domin.addReview
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import com.example.domin.home.ReviewDto
 import kotlinx.coroutines.flow.Flow
 
@@ -10,5 +10,5 @@ class AddReviewUseCase(private val addReview: IAddReview) {
         date: String,
         rate: Double,
         description: String,
-    ): Flow<DataResult<ReviewDto>> = addReview.addReview(name, date, rate, description)
+    ): Flow<Resource<ReviewDto>> = addReview.addReview(name, date, rate, description)
 }

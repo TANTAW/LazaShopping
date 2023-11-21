@@ -1,6 +1,6 @@
 package com.example.domin.addAddress
 
-import com.example.common.DataResult
+import com.example.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 class AddAddressUseCase(private val addAddress: IAddAddress) {
@@ -11,6 +11,6 @@ class AddAddressUseCase(private val addAddress: IAddAddress) {
         phoneNumber: String,
         address: String,
         isConfirmed: Boolean
-    ): Flow<DataResult<AddressDto>> =
+    ): Flow<Resource<AddressDto>> =
         addAddress.addAddress(name, country, city, phoneNumber, address, isConfirmed)
 }
