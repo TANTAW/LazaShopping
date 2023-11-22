@@ -1,6 +1,6 @@
-package com.example.domin.addToCart
+package com.example.data.checkout.models
 
-class OrderInfoDto(
+data class OrderInfoModel(
     val subtotal: Double,
     val shippingCost: Double,
     val total: Double
