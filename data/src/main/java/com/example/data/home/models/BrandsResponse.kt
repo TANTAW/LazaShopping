@@ -9,7 +9,7 @@ data class BrandsResponse(
     val image: String,
     val productList: List<ProductModel>
 ) {
-    fun toProductDto() = BrandDto(name, image, getProductsAsDto(productList))
+    fun toBrandsDto() = BrandDto(name, image, getProductsAsDto(productList))
 
     private fun getProductsAsDto(productList: List<ProductModel>): List<ProductDto> {
         val dtoList: ArrayList<ProductDto> = ArrayList()

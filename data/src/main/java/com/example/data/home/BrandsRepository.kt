@@ -53,7 +53,7 @@ class BrandsRepository(private val brandsApi: BrandsApi) : IBrandList, BaseRemot
         val brandsDtoList: ArrayList<BrandDto> = ArrayList()
 
         data?.forEach {
-            brandsDtoList.add(it.toProductDto())
+            brandsDtoList.add(it.toBrandsDto())
         }
 
         return brandsDtoList.toList()
