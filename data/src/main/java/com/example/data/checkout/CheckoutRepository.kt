@@ -18,13 +18,6 @@ import kotlinx.coroutines.flow.map
 
 class CheckoutRepository(private val checkoutApi: CheckoutApi) : ICheckout, BaseRemoteDataSource() {
 
-    //    override fun checkout(cart: CartDto) =
-    //        flowOf(
-    //            Resource.Success(
-    //                data = ResponseStatus(StatusResults.Success, "Success")
-    //            )
-    //        )
-
     override fun checkout(cart: CartDto): Flow<Resource<ResponseStatus>> {
         val cartItemList = cart.items.map {
             val reviewsList =
