@@ -11,8 +11,15 @@
     <string name="greater_than_zero">Rating must be greater than zero!</string>
     <string name="empty_description">Description can\'t be blank!</string>
     <string name="empty_address">Address can\'t be blank</string>
-    <string name="empty_phone_number">Phone nummber can\'t be blank</string>
+    <string name="empty_phone_number">Phone number can\'t be blank</string>
     <string name="empty_city">City can\'t be blank!</string>
     <string name="empty_country">Country can\'t be blank!</string>
     <string name="valid_phone">Enter valid phone number!</string>
+    <string name="empty_card_holder">Card holder name can\'t be blank!</string>
+    <string name="invalid_card_number">Invalid card number</string>
+    <string name="empty_date">Expiry date can\'t be blank!</string>
+    <string name="invalid_date">Invalid expiry date</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="empty_card_number">Card number can\'t be blank!</string>
+    <string name="empty_cvv">CVV can\'t be blank!</string>
 </resources>

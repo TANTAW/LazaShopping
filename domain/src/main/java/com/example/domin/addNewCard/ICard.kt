@@ -7,8 +7,8 @@ interface ICard {
     fun addCard(
         type: CardType,
         cardHolder: String,
-        cardNumber: Int,
+        cardNumber: String,
         expiryDate: String,
-        cvv: Int
+        cvv: String
     ): Flow<Resource<CardDto>>
 }
